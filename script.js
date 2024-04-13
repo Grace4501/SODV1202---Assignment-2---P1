@@ -1,7 +1,7 @@
 const apiKey = '041101cd91d84fa8b96cc6a50f4ac915';
 const city = 'Calgary';
 
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${'041101cd91d84fa8b96cc6a50f4ac915'}&units=metric`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${'041101cd91d84fa8b96cc6a50f4ac915'}&units=metric`)
     .then(response => response.json())
     .then(data => {
         const temperature = data.main.temp;
